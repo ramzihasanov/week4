@@ -102,7 +102,12 @@
             Console.WriteLine("=================2ci task==============================");
 
 
-
+            Worker worker = new Worker("remzi","hesenov");
+            Worker worker1 = new Worker("eli", "eliyev");
+            Department department = new Department();
+            department.AddWorker(worker);
+            department.AddWorker(worker1);
+            department.ShowAllWorkers();
 
         }  
     }
